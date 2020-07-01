@@ -7,7 +7,7 @@ RUN apt-get install -y python-pip
 RUN apt-get clean all
 RUN pip install flask
 
-ADD hello.py /tmp/hello.py
+COPY hello.py /tmp/hello.py
 
 EXPOSE 5000
 
